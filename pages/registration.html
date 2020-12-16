@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="icon" href="images/icon.png" sizes="16x16">
+    <style>
+        h1 {
+            text-align: center;
+            color: tomato;
+            letter-spacing: 4px;
+            font-size: 50px;
+        }
+
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text],
+        select,
+        textarea,
+        input[type=number] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            /*textarea*/
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: brown;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 150px;
+            margin-left: 300px;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .photo {
+            text-align: center;
+        }
+
+        .photo label {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> <i> Student Registration </i></h1>
+    <div class="container">
+        <form action="../index.html">
+            <div class="photo">
+                <img src="https://via.placeholder.com/150C/000000/FFFFFF https://placeholder.com/?text=upload photo "
+                    style="border-radius: 50%;" alt=""> <br><br>
+                <label for="img">Select image:</label>
+                <input type="file" id="img" name="img" accept="image/*">
+                <br><br>
+            </div>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="+20" required>
+
+            <label for="degree">Degree</label>
+            <input type="text" id="degree" name="degree" placeholder="Your degree" required>
+
+            <label for="Age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Your Age" required>
+
+            <label for="country">Your City</label>
+            <select id="country" name="country" required>
+                <option value="Cairo">Cairo</option>
+                <option value="Portsaid">Portsaid</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Aswan">Aswan</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="in detail" required>
+
+            <label for="subject">About Yourself</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+            <input type="submit" value="Reset">
+
+        </form>
+    </div>
+</body>
+
+</html>
