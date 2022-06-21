@@ -1,3 +1,3 @@
-# yat_project
+# Yat Project
 
-Link: https://yat-project.herokuapp.com/
+Live Demo Link: https://yat-project.herokuapp.com/
